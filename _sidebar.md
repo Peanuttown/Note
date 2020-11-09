@@ -8,3 +8,5 @@
     * [2020-9-8](daily/2020-9-8.md)
 * [GOLANG](golang)
     * [http](golang/http.md)
+* [VNC](vnc)
+    * [settup](vnc/settup.md)
