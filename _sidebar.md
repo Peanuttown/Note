@@ -10,3 +10,5 @@
     * [http](golang/http.md)
 * [VNC](vnc)
     * [settup](vnc/settup.md)
+* [NFS](nfs)
+    * [settup](nfs/settup.md)
