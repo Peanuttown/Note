@@ -1,0 +1,14 @@
+[Unit]
+Description=EIRM CHART REPOSITORY v0.1 daemon
+
+[Service]
+Type=simple
+Restart=on-failure
+StartLimitBurst=100
+RestartSec=3s
+#ExecStart=/usr/bin/autossh -i /home/guest/.ssh/hk_ucloud_rsa -v -nNT -R 10101:127.0.0.1:22 ubuntu@128.1.136.40
+ExecStart=/usr/bin/autossh -i /home/guest/.ssh/hk_ucloud_rsa -M 0 -N -q -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -R 10101:127.0.0.1:22 ubuntu@128.1.136.40
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
