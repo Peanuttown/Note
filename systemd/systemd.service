@@ -1,0 +1,16 @@
+# Demo
+[Unit]
+Description=balabala
+
+[Service]
+Type=simple
+ExecStart=cmd
+WorkingDirectory=/working
+Restart=on-failure
+StartLimitBurst=100
+RestartSec=3s
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+```
