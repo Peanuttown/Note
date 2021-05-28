@@ -27,3 +27,8 @@ FLUSH PRIVILEGES;
 CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS %s charset utf8
 ```
+
+# Connect Url
+```
+root:tzzjkl@tcp(127.0.0.1:3306)/dbname
+```
