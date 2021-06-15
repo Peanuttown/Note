@@ -32,3 +32,10 @@ CREATE DATABASE IF NOT EXISTS %s charset utf8
 ```
 root:tzzjkl@tcp(127.0.0.1:3306)/dbname
 ```
+
+# backup data
+```
+mysqldump -u{demoUser} -h{demoAddr} {demoDB} --set-gtid-purged=off --column-statistics=0 -p > backup.sql
+
+mysql -u root -h 127.0.0.1 -p -Ddingding_data_backup < backup.sql
+```
